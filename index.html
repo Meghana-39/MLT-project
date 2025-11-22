@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Investment Assistant</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Investment Assistant</h1>
+
+<!-- INPUT SECTION -->
+<div class="card">
+    <h2>Enter Investment Data</h2>
+    <input id="name" placeholder="Name">
+    <input id="amount" placeholder="Investment Amount">
+    <input id="risk" placeholder="Risk Level (Low/Medium/High)">
+    <button onclick="saveData()">Save</button>
+</div>
+
+<!-- DISPLAY SECTION -->
+<div class="card">
+    <h2>All Investors Data</h2>
+    <table id="dataTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Risk</th>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
